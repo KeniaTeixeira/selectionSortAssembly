@@ -1,5 +1,5 @@
 .data
-arquivo: .asciiz "/home/kenia/Documentos/Trabalho1AC2/dados.txt"   
+arquivo: .asciiz "/caminho/dados.txt"   
 space: .asciiz " "
 buffer:   .space 1024     # espaço para ler o arquivo
 numeros: .space 400 		# espaço para 100 inteiros
