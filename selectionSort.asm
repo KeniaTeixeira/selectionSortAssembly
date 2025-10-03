@@ -5,7 +5,7 @@ newline: .asciiz "\n"
 buffer:   .space 1024     			# espaço para ler o arquivo
 .align 2
 numeros: .space 400 				# espaço para 100 inteiros
-tempoExec: .asciiz "\nTempo de execusão: " 	# mensagem que ira aparecer jutamente com o tempo gasto para executar a ordenação
+tempoExec: .asciiz "\nTempo de execução: " 	# mensagem que ira aparecer jutamente com o tempo gasto para executar a ordenação
 arrayOriginal: .asciiz "\nArray original: "
 arrayOrdenado: .asciiz "\nArray ordenado: "
 .text
@@ -100,7 +100,7 @@ main:
 
     	#----------------------------- INICIA A CONTAGEM DE TEMPO ---------------------
 
-    	li $v0, 30         		# chama o syscal de tempo para calcular o tempo de execusão
+    	li $v0, 30         		# chama o syscal de tempo para calcular o tempo de execução
     	syscall
     	move $s0, $a0      		# armazena no registrador s0 o tempo incial
 
@@ -136,7 +136,7 @@ main:
     	syscall
                   
     	li $v0, 1                  	# chama o syscall de printar inteiro
-    	move $a0, $t0              	# copia o valor de t0 em a0 para poder imprimir o valor de execusão
+    	move $a0, $t0              	# copia o valor de t0 em a0 para poder imprimir o valor de execução
     	syscall
 
     	li $v0, 10                 	# syscall para saida do programa
